@@ -14,11 +14,7 @@ const categories = [
     Category.HOBBY,
     Category.SOCIAL,
 ];
-const tasks = [
-    new Task("Wyrzucić śmieci", false, Category.HOBBY),
-    new Task("Pójść na siłkę", true, Category.GYM),
-    new Task("Przerobić Typescript", false),
-];
+const tasks = [];
 const addTask = (task) => {
     tasks.push(task);
 };

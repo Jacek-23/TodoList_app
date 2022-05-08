@@ -19,11 +19,8 @@ const categories: Category[] = [
     Category.SOCIAL,
 ];
 
-const tasks: Task[] = [
-    new Task("Wyrzucić śmieci", false, Category.HOBBY),
-    new Task("Pójść na siłkę", true, Category.GYM),
-    new Task("Przerobić Typescript", false),
-];
+const tasks: Task[] = [];
+
 
 const addTask = (task: Task) => {
     tasks.push(task);

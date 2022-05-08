@@ -6,13 +6,13 @@ const handleCategoryChange = (category: Category) => {
     } else if (category === Category.GYM) {
         alert("LECISZ NA SILKE");
     } else if (category === Category.HOBBY) {
-        document.body.style.background = "red";
+        document.body.style.background = "orange";
     } else if (category === Category.WORK) {
         console.log("Zmiana na work!");
         alert("PRACA POPLACA");
         document.body.style.background = "green";
     } else if (category === Category.SOCIAL) {
-        document.body.style.background = "yellow";
+        document.body.style.background = "pink";
     } else {
         const never: never = category;
         console.log(never);
@@ -27,8 +27,7 @@ export const render = (
     categories.forEach((category) => {
         const categoryElement: HTMLElement = document.createElement("li");
 
-        const radioInputElement: HTMLInputElement =
-            document.createElement("input");
+        const radioInputElement: HTMLInputElement = document.createElement("input");
         radioInputElement.type = "radio";
         radioInputElement.name = "category";
         radioInputElement.value = category;

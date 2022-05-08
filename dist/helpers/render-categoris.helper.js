@@ -7,7 +7,7 @@ const handleCategoryChange = (category) => {
         alert("LECISZ NA SILKE");
     }
     else if (category === Category.HOBBY) {
-        document.body.style.background = "red";
+        document.body.style.background = "orange";
     }
     else if (category === Category.WORK) {
         console.log("Zmiana na work!");
@@ -15,7 +15,7 @@ const handleCategoryChange = (category) => {
         document.body.style.background = "green";
     }
     else if (category === Category.SOCIAL) {
-        document.body.style.background = "yellow";
+        document.body.style.background = "pink";
     }
     else {
         const never = category;
